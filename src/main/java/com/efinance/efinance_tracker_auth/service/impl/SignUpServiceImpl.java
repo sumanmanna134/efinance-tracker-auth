@@ -1,0 +1,49 @@
+/*
+ * Copyright (c) 2025  Suman Manna
+ * Unauthorized copying of this file, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ */
+
+package com.efinance.efinance_tracker_auth.service.impl;
+
+import com.efinance.efinance_tracker_auth.dto.ApiResponse;
+import com.efinance.efinance_tracker_auth.dto.JWTResponse;
+import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
+import com.efinance.efinance_tracker_auth.entity.RefreshToken;
+import com.efinance.efinance_tracker_auth.exception.UserAlreadyExistException;
+import com.efinance.efinance_tracker_auth.service.JwtManager;
+import com.efinance.efinance_tracker_auth.service.RefreshTokenService;
+import com.efinance.efinance_tracker_auth.service.SignupService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+
+@Service
+public class SignUpServiceImpl implements SignupService {
+
+    @Autowired
+    UserDetailServiceImpl userDetailService;
+
+    @Autowired
+    RefreshTokenService refreshTokenService;
+
+    @Autowired
+    JwtManager jwtManager;
+    @Override
+    public ApiResponse<?> SignUp(UserInfoDto userInfoDto) {
+        boolean isSignUpSuccess = userDetailService.signUp(userInfoDto);
+        if(!isSignUpSuccess){
+            throw new UserAlreadyExistException("User Already Exist!");
+        }
+
+        RefreshToken refreshToken = refreshTokenService.createRefreshToken(userInfoDto.getUsername());
+
+        String jwtToken = jwtManager.generateToken(userInfoDto.getUsername());
+
+        return ApiResponse.success(JWTResponse.builder()
+                .accessToken(jwtToken)
+                .token(refreshToken.getRefreshToken())
+                .build(), "User Registered Successfully");
+
+    }
+}

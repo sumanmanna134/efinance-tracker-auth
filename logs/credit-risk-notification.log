@@ -1,0 +1,346 @@
+2025-06-29T02:21:48.525+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 1790 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T02:21:48.526+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T02:21:48.569+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T02:21:48.569+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T02:21:48.903+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T02:21:48.930+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-06-29T02:21:49.376+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T02:21:49.383+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:21:49.384+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T02:21:49.384+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T02:21:49.402+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T02:21:49.402+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 832 ms
+2025-06-29T02:21:49.412+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T02:21:49.918+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T02:21:50.021+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T02:21:50.049+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T02:21:50.066+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T02:21:50.205+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T02:21:50.218+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T02:21:50.329+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f9327c8
+2025-06-29T02:21:50.330+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T02:21:50.352+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T02:21:50.361+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T02:21:50.763+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T02:21:50.854+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T02:21:50.984+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:21:51.261+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T02:21:51.284+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T02:21:51.284+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T02:21:51.427+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T02:21:51.543+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T02:21:51.551+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:21:51.561+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T02:21:51.567+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.462 seconds (process running for 3.761)
+2025-06-29T02:22:39.574+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T02:22:41.587+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T02:22:41.600+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:22:41.609+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T02:22:41.614+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-29T02:22:44.281+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 2523 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T02:22:44.282+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T02:22:44.332+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T02:22:44.332+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T02:22:44.601+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T02:22:44.628+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-06-29T02:22:45.046+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T02:22:45.053+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:22:45.054+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T02:22:45.054+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T02:22:45.072+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T02:22:45.072+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 740 ms
+2025-06-29T02:22:45.084+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T02:22:45.587+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T02:22:45.687+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T02:22:45.711+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T02:22:45.725+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T02:22:45.856+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T02:22:45.869+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T02:22:45.974+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2aca9e8a
+2025-06-29T02:22:45.975+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T02:22:45.996+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T02:22:46.006+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T02:22:46.373+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T02:22:46.455+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T02:22:46.561+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:22:46.870+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T02:22:46.892+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T02:22:46.892+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T02:22:47.035+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T02:22:47.158+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T02:22:47.167+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:22:47.177+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T02:22:47.185+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.256 seconds (process running for 3.527)
+2025-06-29T02:23:00.356+0530 [http-nio-8080-exec-1] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29T02:23:00.357+0530 [http-nio-8080-exec-1] INFO  [::] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29T02:23:00.366+0530 [http-nio-8080-exec-1] INFO  [::] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-06-29T02:29:55.778+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T02:29:57.797+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T02:29:57.809+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:29:57.822+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T02:29:57.825+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-29T02:30:00.458+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 8150 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T02:30:00.459+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T02:30:00.495+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T02:30:00.495+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T02:30:00.785+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T02:30:00.827+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2025-06-29T02:30:01.310+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T02:30:01.318+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:30:01.319+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T02:30:01.320+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T02:30:01.344+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T02:30:01.344+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 848 ms
+2025-06-29T02:30:01.354+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T02:30:01.859+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T02:30:01.952+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T02:30:01.982+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T02:30:02.016+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T02:30:02.167+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T02:30:02.181+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T02:30:02.319+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f0789de
+2025-06-29T02:30:02.320+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T02:30:02.343+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T02:30:02.353+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T02:30:02.858+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T02:30:02.970+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T02:30:03.095+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:30:03.388+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T02:30:03.411+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T02:30:03.412+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T02:30:03.562+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T02:30:03.683+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T02:30:03.691+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:30:03.701+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T02:30:03.707+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.662 seconds (process running for 3.946)
+2025-06-29T02:30:06.502+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T02:30:08.521+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T02:30:08.536+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:30:08.542+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T02:30:08.546+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-29T02:58:06.537+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 17816 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T02:58:06.539+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T02:58:06.575+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T02:58:06.575+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T02:58:06.906+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T02:58:06.932+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-06-29T02:58:07.580+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T02:58:07.590+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:58:07.591+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T02:58:07.591+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T02:58:07.617+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T02:58:07.617+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1042 ms
+2025-06-29T02:58:07.632+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T02:58:08.134+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T02:58:08.291+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T02:58:08.338+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T02:58:08.374+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T02:58:08.528+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T02:58:08.543+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T02:58:08.713+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ea8b449
+2025-06-29T02:58:08.714+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T02:58:08.738+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T02:58:08.749+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T02:58:09.223+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T02:58:09.316+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T02:58:09.425+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T02:58:09.708+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T02:58:09.733+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T02:58:09.734+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T02:58:09.919+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T02:58:10.034+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T02:58:10.042+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T02:58:10.054+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T02:58:10.060+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.906 seconds (process running for 4.274)
+2025-06-29T02:58:27.636+0530 [http-nio-8080-exec-2] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29T02:58:27.636+0530 [http-nio-8080-exec-2] INFO  [::] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29T02:58:27.645+0530 [http-nio-8080-exec-2] INFO  [::] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-06-29T02:58:27.727+0530 [http-nio-8080-exec-2] WARN  [::] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.efinance.efinance_tracker_auth.dto.ApiResponse<?>> com.efinance.efinance_tracker_auth.controller.SignUpController.signup(com.efinance.efinance_tracker_auth.dto.UserInfoDto)]
+2025-06-29T03:00:38.517+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T03:00:40.532+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T03:00:40.541+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:00:40.546+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T03:00:40.549+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-29T03:00:42.880+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 19482 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T03:00:42.881+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T03:00:42.919+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T03:00:42.919+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T03:00:43.207+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T03:00:43.232+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-06-29T03:00:43.676+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T03:00:43.683+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T03:00:43.685+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T03:00:43.685+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T03:00:43.703+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T03:00:43.703+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 784 ms
+2025-06-29T03:00:43.716+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T03:00:44.218+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T03:00:44.312+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T03:00:44.342+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T03:00:44.359+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T03:00:44.506+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T03:00:44.519+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T03:00:44.657+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ea8b449
+2025-06-29T03:00:44.658+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T03:00:44.679+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T03:00:44.698+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T03:00:45.117+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T03:00:45.205+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T03:00:45.340+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:00:45.593+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T03:00:45.617+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T03:00:45.618+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T03:00:45.777+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T03:00:45.894+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T03:00:45.902+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T03:00:45.912+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T03:00:45.918+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.42 seconds (process running for 3.732)
+2025-06-29T03:01:59.464+0530 [http-nio-8080-exec-2] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29T03:01:59.464+0530 [http-nio-8080-exec-2] INFO  [::] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29T03:01:59.468+0530 [http-nio-8080-exec-2] INFO  [::] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-06-29T03:01:59.546+0530 [http-nio-8080-exec-2] WARN  [::] c.f.j.d.PropertyNamingStrategy$SnakeCaseStrategy - PropertyNamingStrategy.SnakeCaseStrategy is used but it has been deprecated due to risk of deadlock. Consider using PropertyNamingStrategies.SnakeCaseStrategy instead. See https://github.com/FasterXML/jackson-databind/issues/2715 for more details.
+2025-06-29T03:01:59.599+0530 [http-nio-8080-exec-2] WARN  [::] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: rawPassword cannot be null]
+2025-06-29T03:02:26.024+0530 [http-nio-8080-exec-3] WARN  [::] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: Username null not found]
+2025-06-29T03:02:56.441+0530 [http-nio-8080-exec-5] WARN  [::] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: Username manna.suman134@gmail.com not found]
+2025-06-29T03:07:09.425+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T03:07:11.457+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T03:07:11.467+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:07:11.482+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T03:07:11.486+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-29T03:07:14.021+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 23403 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T03:07:14.022+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T03:07:14.071+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T03:07:14.071+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T03:07:14.368+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T03:07:14.404+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2025-06-29T03:07:14.941+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T03:07:14.948+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T03:07:14.950+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T03:07:14.950+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T03:07:14.971+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T03:07:14.971+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 899 ms
+2025-06-29T03:07:14.986+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T03:07:15.492+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T03:07:15.597+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T03:07:15.626+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T03:07:15.643+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T03:07:15.789+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T03:07:15.804+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T03:07:15.930+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ee87fb8
+2025-06-29T03:07:15.931+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T03:07:15.953+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T03:07:15.963+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T03:07:16.377+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T03:07:16.477+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T03:07:16.585+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:07:16.847+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T03:07:16.869+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T03:07:16.869+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T03:07:17.011+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T03:07:17.116+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T03:07:17.124+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T03:07:17.134+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T03:07:17.139+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.542 seconds (process running for 3.825)
+2025-06-29T03:07:20.485+0530 [http-nio-8080-exec-1] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29T03:07:20.486+0530 [http-nio-8080-exec-1] INFO  [::] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29T03:07:20.488+0530 [http-nio-8080-exec-1] INFO  [::] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-29T03:07:20.543+0530 [http-nio-8080-exec-1] WARN  [::] c.f.j.d.PropertyNamingStrategy$SnakeCaseStrategy - PropertyNamingStrategy.SnakeCaseStrategy is used but it has been deprecated due to risk of deadlock. Consider using PropertyNamingStrategies.SnakeCaseStrategy instead. See https://github.com/FasterXML/jackson-databind/issues/2715 for more details.
+2025-06-29T03:07:20.780+0530 [http-nio-8080-exec-1] WARN  [::] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: Username manna.suman134@gmail.com not found]
+2025-06-29T03:13:01.892+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T03:13:03.914+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T03:13:03.927+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:13:03.935+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T03:13:03.939+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-29T03:13:06.522+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Starting EfinanceTrackerAuthApplication using Java 22.0.2 with PID 26996 (/Users/sumanmanna/Documents/springboot/efinance-tracker-auth/target/classes started by sumanmanna in /Users/sumanmanna/Documents/springboot/efinance-tracker-auth)
+2025-06-29T03:13:06.523+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29T03:13:06.559+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-29T03:13:06.559+0530 [restartedMain] INFO  [::] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-29T03:13:06.850+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-29T03:13:06.876+0530 [restartedMain] INFO  [::] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-06-29T03:13:07.305+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-29T03:13:07.311+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29T03:13:07.313+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29T03:13:07.313+0530 [restartedMain] INFO  [::] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29T03:13:07.331+0530 [restartedMain] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29T03:13:07.331+0530 [restartedMain] INFO  [::] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 771 ms
+2025-06-29T03:13:07.348+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - App configuration loading..
+2025-06-29T03:13:07.849+0530 [restartedMain] INFO  [::] c.e.e.config.AppConfig - Configuration Loaded Successfully
+2025-06-29T03:13:08.015+0530 [restartedMain] INFO  [::] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-29T03:13:08.056+0530 [restartedMain] INFO  [::] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-29T03:13:08.078+0530 [restartedMain] INFO  [::] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-29T03:13:08.220+0530 [restartedMain] INFO  [::] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-29T03:13:08.235+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29T03:13:08.357+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34a679ff
+2025-06-29T03:13:08.357+0530 [restartedMain] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29T03:13:08.384+0530 [restartedMain] WARN  [::] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-29T03:13:08.395+0530 [restartedMain] INFO  [::] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-29T03:13:08.793+0530 [restartedMain] INFO  [::] o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.efinance.efinance_tracker_auth.entity.UserRole (class must be instantiated by Interceptor)
+2025-06-29T03:13:08.884+0530 [restartedMain] INFO  [::] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-29T03:13:08.975+0530 [restartedMain] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:13:09.287+0530 [restartedMain] WARN  [::] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29T03:13:09.315+0530 [restartedMain] INFO  [::] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-29T03:13:09.315+0530 [restartedMain] WARN  [::] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-29T03:13:09.505+0530 [restartedMain] INFO  [::] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-29T03:13:09.613+0530 [restartedMain] INFO  [::] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-29T03:13:09.620+0530 [restartedMain] INFO  [::] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29T03:13:09.630+0530 [restartedMain] INFO  [::] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-29T03:13:09.636+0530 [restartedMain] INFO  [::] c.e.e.EfinanceTrackerAuthApplication - Started EfinanceTrackerAuthApplication in 3.539 seconds (process running for 3.831)
+2025-06-29T03:13:14.061+0530 [http-nio-8080-exec-2] INFO  [::] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29T03:13:14.062+0530 [http-nio-8080-exec-2] INFO  [::] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29T03:13:14.064+0530 [http-nio-8080-exec-2] INFO  [::] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-29T03:13:14.125+0530 [http-nio-8080-exec-2] WARN  [::] c.f.j.d.PropertyNamingStrategy$SnakeCaseStrategy - PropertyNamingStrategy.SnakeCaseStrategy is used but it has been deprecated due to risk of deadlock. Consider using PropertyNamingStrategies.SnakeCaseStrategy instead. See https://github.com/FasterXML/jackson-databind/issues/2715 for more details.
+2025-06-29T03:13:24.813+0530 [http-nio-8080-exec-3] WARN  [::] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.efinance.efinance_tracker_auth.exception.UserAlreadyExistException: User Already Exist!]
+2025-06-29T03:16:12.056+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-29T03:16:14.070+0530 [tomcat-shutdown] INFO  [::] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-29T03:16:14.082+0530 [SpringApplicationShutdownHook] INFO  [::] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-29T03:16:14.099+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-29T03:16:14.102+0530 [SpringApplicationShutdownHook] INFO  [::] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
