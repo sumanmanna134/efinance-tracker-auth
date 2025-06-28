@@ -4,18 +4,17 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service.impl;
+package com.efinance.efinance_tracker_auth.service.signup;
 
 import com.efinance.efinance_tracker_auth.dto.ApiResponse;
 import com.efinance.efinance_tracker_auth.dto.JWTResponse;
 import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
 import com.efinance.efinance_tracker_auth.entity.RefreshToken;
 import com.efinance.efinance_tracker_auth.exception.UserAlreadyExistException;
-import com.efinance.efinance_tracker_auth.service.JwtManager;
-import com.efinance.efinance_tracker_auth.service.RefreshTokenService;
-import com.efinance.efinance_tracker_auth.service.SignupService;
+import com.efinance.efinance_tracker_auth.service.user.UserDetailServiceImpl;
+import com.efinance.efinance_tracker_auth.service.jwt.JwtManager;
+import com.efinance.efinance_tracker_auth.service.token.RefreshTokenService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 @Service

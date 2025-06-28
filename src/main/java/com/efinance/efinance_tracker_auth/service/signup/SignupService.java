@@ -4,7 +4,7 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service;
+package com.efinance.efinance_tracker_auth.service.signup;
 
 import com.efinance.efinance_tracker_auth.dto.ApiResponse;
 import com.efinance.efinance_tracker_auth.dto.UserInfoDto;

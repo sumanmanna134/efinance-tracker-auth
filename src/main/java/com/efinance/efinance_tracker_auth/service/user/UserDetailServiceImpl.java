@@ -4,12 +4,10 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service.impl;
+package com.efinance.efinance_tracker_auth.service.user;
 
 import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
 import com.efinance.efinance_tracker_auth.entity.UserInfo;
-import com.efinance.efinance_tracker_auth.service.CustomUserDetails;
-import com.efinance.efinance_tracker_auth.service.UserInfoService;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +18,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.UUID;
 
 @Data

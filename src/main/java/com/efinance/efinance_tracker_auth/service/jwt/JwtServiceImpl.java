@@ -4,16 +4,13 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service.impl;
+package com.efinance.efinance_tracker_auth.service.jwt;
 
 import com.efinance.efinance_tracker_auth.config.AppConfig;
-import com.efinance.efinance_tracker_auth.service.JwtManager;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
-import io.jsonwebtoken.security.SecureDigestAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
