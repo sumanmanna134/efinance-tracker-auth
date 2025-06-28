@@ -4,7 +4,7 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service;
+package com.efinance.efinance_tracker_auth.service.jwt;
 
 import io.jsonwebtoken.Claims;
 import org.springframework.security.core.userdetails.UserDetails;

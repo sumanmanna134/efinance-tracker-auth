@@ -8,7 +8,7 @@ package com.efinance.efinance_tracker_auth.controller;
 
 import com.efinance.efinance_tracker_auth.dto.ApiResponse;
 import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
-import com.efinance.efinance_tracker_auth.service.SignupService;
+import com.efinance.efinance_tracker_auth.service.signup.SignupService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;

@@ -4,15 +4,15 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service;
+package com.efinance.efinance_tracker_auth.filter;
 
 import com.efinance.efinance_tracker_auth.config.AppConfig;
-import com.efinance.efinance_tracker_auth.service.impl.UserDetailServiceImpl;
+import com.efinance.efinance_tracker_auth.service.user.UserDetailServiceImpl;
+import com.efinance.efinance_tracker_auth.service.jwt.JwtManager;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

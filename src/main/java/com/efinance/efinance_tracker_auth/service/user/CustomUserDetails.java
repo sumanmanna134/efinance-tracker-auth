@@ -4,7 +4,7 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service;
+package com.efinance.efinance_tracker_auth.service.user;
 
 import com.efinance.efinance_tracker_auth.entity.UserInfo;
 import com.efinance.efinance_tracker_auth.entity.UserRole;

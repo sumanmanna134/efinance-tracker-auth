@@ -4,12 +4,13 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service;
+package com.efinance.efinance_tracker_auth.service.token;
 
 import com.efinance.efinance_tracker_auth.entity.RefreshToken;
 import com.efinance.efinance_tracker_auth.entity.UserInfo;
 import com.efinance.efinance_tracker_auth.exception.RefreshTokenExpiredException;
 import com.efinance.efinance_tracker_auth.repository.RefreshTokenRepository;
+import com.efinance.efinance_tracker_auth.service.user.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -4,11 +4,10 @@
  * Proprietary and confidential.
  */
 
-package com.efinance.efinance_tracker_auth.service.impl;
+package com.efinance.efinance_tracker_auth.service.user;
 
 import com.efinance.efinance_tracker_auth.entity.UserInfo;
 import com.efinance.efinance_tracker_auth.repository.IUserRepository;
-import com.efinance.efinance_tracker_auth.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
