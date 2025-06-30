@@ -8,7 +8,6 @@ package com.efinance.efinance_tracker_auth.service.s3;
 
 import com.efinance.efinance_tracker_auth.config.AppConfig;
 import jakarta.annotation.PostConstruct;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
