@@ -19,7 +19,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Table(name = "users")
-public class UserInfo {
+public class UserCredential {
 
     @Id
     @Column(name = "user_id")

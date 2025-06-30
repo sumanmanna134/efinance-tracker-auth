@@ -7,7 +7,7 @@
 package com.efinance.efinance_tracker_auth.service.token;
 
 import com.efinance.efinance_tracker_auth.entity.RefreshToken;
-import com.efinance.efinance_tracker_auth.entity.UserInfo;
+import com.efinance.efinance_tracker_auth.entity.UserCredential;
 import com.efinance.efinance_tracker_auth.exception.RefreshTokenExpiredException;
 import com.efinance.efinance_tracker_auth.repository.RefreshTokenRepository;
 import com.efinance.efinance_tracker_auth.service.user.UserInfoService;
@@ -28,10 +28,10 @@ public class RefreshTokenService {
     RefreshTokenRepository refreshTokenRepository;
 
     public RefreshToken createRefreshToken(String username){
-        UserInfo user = userInfoService.getUserByUsername(username);
+        UserCredential user = userInfoService.getUserByUsername(username);
 
         RefreshToken refreshToken = RefreshToken.builder()
-                .userInfo(user)
+                .userCredential(user)
                 .refreshToken(UUID.randomUUID().toString())
                 .expiryDate(Instant.now().plusMillis(600000))
                 .build();

@@ -8,7 +8,7 @@ package com.efinance.efinance_tracker_auth.service.signup;
 
 import com.efinance.efinance_tracker_auth.dto.ApiResponse;
 import com.efinance.efinance_tracker_auth.dto.JWTResponse;
-import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
+import com.efinance.efinance_tracker_auth.dto.UserCredentialDto;
 import com.efinance.efinance_tracker_auth.entity.RefreshToken;
 import com.efinance.efinance_tracker_auth.exception.UserAlreadyExistException;
 import com.efinance.efinance_tracker_auth.service.user.UserDetailServiceImpl;
@@ -29,7 +29,7 @@ public class SignUpServiceImpl implements SignupService {
     @Autowired
     JwtManager jwtManager;
     @Override
-    public ApiResponse<?> SignUp(UserInfoDto userInfoDto) {
+    public ApiResponse<?> SignUp(UserCredentialDto userInfoDto) {
         boolean isSignUpSuccess = userDetailService.signUp(userInfoDto);
         if(!isSignUpSuccess){
             throw new UserAlreadyExistException("User Already Exist!");

@@ -7,7 +7,7 @@
 package com.efinance.efinance_tracker_auth.controller;
 
 import com.efinance.efinance_tracker_auth.dto.ApiResponse;
-import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
+import com.efinance.efinance_tracker_auth.dto.UserCredentialDto;
 import com.efinance.efinance_tracker_auth.service.signup.SignupService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/auth/v1")
+@RequestMapping("/auth")
 public class SignUpController {
 
     @Autowired
@@ -27,7 +27,7 @@ public class SignUpController {
 
 
     @PostMapping("/signup")
-    public ResponseEntity<ApiResponse<?>> signup(@Valid @RequestBody UserInfoDto userInfoDto){
+    public ResponseEntity<ApiResponse<?>> signup(@Valid @RequestBody UserCredentialDto userInfoDto){
         ApiResponse<?> apiResponse = signupService.SignUp(userInfoDto);
         if(apiResponse.isSuccess()){
             return ResponseEntity.ok(apiResponse);

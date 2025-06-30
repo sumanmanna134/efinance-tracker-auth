@@ -13,16 +13,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.client.HttpClientErrorException;
 
 import javax.naming.AuthenticationException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-    @ExceptionHandler(RuntimeException.class)
-    public ResponseEntity<ApiResponse<Object>> handleRuntimeException(RuntimeException ex){
-        return ErrorHelper.getErrorResponse(ex, HttpStatus.INTERNAL_SERVER_ERROR);
-    }
+//    @ExceptionHandler(RuntimeException.class)
+//    public ResponseEntity<ApiResponse<Object>> handleRuntimeException(RuntimeException ex){
+//        return ErrorHelper.getErrorResponse(ex, HttpStatus.INTERNAL_SERVER_ERROR);
+//    }
 
     @ExceptionHandler(RefreshTokenExpiredException.class)
     public ResponseEntity<ApiResponse<Object>> handleRefreshTokenException(RefreshTokenExpiredException ex){
@@ -42,6 +41,26 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity<ApiResponse<Object>> handleAuthenticationException(AuthenticationException ex){
         return ErrorHelper.getErrorResponse(ex, HttpStatus.UNAUTHORIZED);
+    }
+
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<ApiResponse<Object>> handleDuplicateKeyException(RuntimeException ex) {
+        ApiResponse<Object> response = ApiResponse.error(extractMessage(ex), HttpStatus.INTERNAL_SERVER_ERROR);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
+    }
+
+    private String extractMessage(RuntimeException ex) {
+        String message = ex.getMessage();
+        if (message != null && message.contains("duplicate key error")) {
+            if (message.contains("user_id") || message.contains("userId")) {
+                return "User ID already exists";
+            } else if (message.contains("email")) {
+                return "Email already exists";
+            } else if (message.contains("phone")) {
+                return "Phone number already exists";
+            }
+        }
+        return message;
     }
 
 

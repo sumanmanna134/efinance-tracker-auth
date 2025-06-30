@@ -6,8 +6,8 @@
 
 package com.efinance.efinance_tracker_auth.service.user;
 
-import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
-import com.efinance.efinance_tracker_auth.entity.UserInfo;
+import com.efinance.efinance_tracker_auth.dto.UserCredentialDto;
+import com.efinance.efinance_tracker_auth.entity.UserCredential;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,15 +32,15 @@ public class UserDetailServiceImpl implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-       UserInfo user = userInfoService.getUserByUsername(username);
+       UserCredential user = userInfoService.getUserByUsername(username);
        return new CustomUserDetails(user);
     }
 
-    public boolean checkIfUserAlreadyExist(UserInfoDto userInfoDto){
+    public boolean checkIfUserAlreadyExist(UserCredentialDto userInfoDto){
         return userInfoService.isUserExist(userInfoDto.getUsername());
     }
 
-    public boolean signUp(UserInfoDto userInfoDto){
+    public boolean signUp(UserCredentialDto userInfoDto){
         userInfoDto.setPassword(passwordEncoder.encode(userInfoDto.getPassword()));
 
         if(checkIfUserAlreadyExist(userInfoDto)){
@@ -48,7 +48,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
         }
 
         String uid = UUID.randomUUID().toString();
-        userInfoService.save(UserInfo.builder()
+        userInfoService.save(UserCredential.builder()
                 .userId(uid)
                 .username(userInfoDto.getUsername())
                 .password(userInfoDto.getPassword())

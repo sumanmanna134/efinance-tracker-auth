@@ -6,7 +6,7 @@
 
 package com.efinance.efinance_tracker_auth.service.user;
 
-import com.efinance.efinance_tracker_auth.entity.UserInfo;
+import com.efinance.efinance_tracker_auth.entity.UserCredential;
 import com.efinance.efinance_tracker_auth.entity.UserRole;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class CustomUserDetails extends UserInfo implements UserDetails {
+public class CustomUserDetails extends UserCredential implements UserDetails {
 
     private final String username;
 
@@ -24,7 +24,7 @@ public class CustomUserDetails extends UserInfo implements UserDetails {
 
     Collection<? extends GrantedAuthority> authorities;
 
-    public CustomUserDetails(UserInfo user) {
+    public CustomUserDetails(UserCredential user) {
         this.username = user.getUsername();
         this.password = user.getPassword();
         List<GrantedAuthority> auths = new ArrayList<>();
