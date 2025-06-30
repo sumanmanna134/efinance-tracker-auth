@@ -7,9 +7,9 @@
 package com.efinance.efinance_tracker_auth.service.signup;
 
 import com.efinance.efinance_tracker_auth.dto.ApiResponse;
-import com.efinance.efinance_tracker_auth.dto.UserInfoDto;
+import com.efinance.efinance_tracker_auth.dto.UserCredentialDto;
 
 public interface SignupService {
 
-    public ApiResponse<?> SignUp(UserInfoDto userInfoDto);
+    public ApiResponse<?> SignUp(UserCredentialDto userInfoDto);
 }

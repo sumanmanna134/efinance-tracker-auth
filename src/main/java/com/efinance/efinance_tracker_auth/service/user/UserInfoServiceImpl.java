@@ -6,7 +6,7 @@
 
 package com.efinance.efinance_tracker_auth.service.user;
 
-import com.efinance.efinance_tracker_auth.entity.UserInfo;
+import com.efinance.efinance_tracker_auth.entity.UserCredential;
 import com.efinance.efinance_tracker_auth.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -21,8 +21,8 @@ public class UserInfoServiceImpl implements UserInfoService {
     private IUserRepository IUserRepository;
 
     @Override
-    public UserInfo getUserByUsername(String username){
-        Optional<UserInfo> user = IUserRepository.findByUsername(username);
+    public UserCredential getUserByUsername(String username){
+        Optional<UserCredential> user = IUserRepository.findByUsername(username);
         String message = String.format("Username %s not found", username);
         if(user.isEmpty()){
             throw new UsernameNotFoundException(message);
@@ -36,9 +36,26 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
     @Override
-    public void save(UserInfo userInfo){
+    public void isUserExistByUserId(String userId) {
+        Optional<UserCredential> byUserId = IUserRepository.findByUserId(userId);
+        if(byUserId.isEmpty()){
+            throw new UsernameNotFoundException("User not Found!");
+        }
+    }
+
+    @Override
+    public UserCredential getUserByUserId(String userId) {
+        Optional<UserCredential> byUserId = IUserRepository.findByUserId(userId);
+        if(byUserId.isEmpty()){
+            throw new UsernameNotFoundException("User not Found!");
+        }
+        return byUserId.get();
+    }
+
+    @Override
+    public void save(UserCredential userCredential){
         try{
-           IUserRepository.save(userInfo);
+           IUserRepository.save(userCredential);
         }catch (Exception ex){
             throw new RuntimeException(ex.getMessage());
         }

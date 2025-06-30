@@ -50,8 +50,8 @@ public class SecurityConfig {
 
         return httpSecurity.csrf(AbstractHttpConfigurer::disable).cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorizeHttpRequests ->
-                        authorizeHttpRequests.requestMatchers("/auth/v1/login", "/auth/v1/refreshToken","/auth/v1/signup", "/").permitAll()
-                        .anyRequest().authenticated()
+                        authorizeHttpRequests.requestMatchers("/auth/signup", "/auth/refreshToken","/auth/signin","/profile","/").permitAll()
+                        .anyRequest().permitAll()
                 )
                 .exceptionHandling(ex -> ex.authenticationEntryPoint(unAuthorizeHandler).accessDeniedHandler(accessDeniedExceptionHandler))
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

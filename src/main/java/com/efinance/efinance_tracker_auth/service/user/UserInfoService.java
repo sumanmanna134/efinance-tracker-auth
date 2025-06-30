@@ -6,13 +6,17 @@
 
 package com.efinance.efinance_tracker_auth.service.user;
 
-import com.efinance.efinance_tracker_auth.entity.UserInfo;
+import com.efinance.efinance_tracker_auth.entity.UserCredential;
 
 public interface UserInfoService {
 
-    public UserInfo getUserByUsername(String username);
+    public UserCredential getUserByUsername(String username);
 
     public boolean isUserExist(String username);
 
-    public void save(UserInfo userInfo);
+    public void isUserExistByUserId(String userId);
+
+    public UserCredential getUserByUserId(String userId);
+
+    public void save(UserCredential userCredential);
 }
